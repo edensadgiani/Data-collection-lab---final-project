@@ -53,7 +53,36 @@ Used to estimate the probability of rental for a specific property on a given da
 Instead of full price optimization, days are **ranked by predicted rental probability**, and prices are dynamically adjusted (±10%) for high- and low-demand periods.
 
 
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Key%20Results&fontSize=28&fontAlign=11&fontColor=EEF5FF&reversal=true&theme=holi)
+
+- The XGBoost model significantly outperforms city-level baseline pricing, explaining a substantial portion of price variance.
+
+- The logistic regression model provides well-calibrated probability estimates, suitable for demand estimation rather than binary classification.
+
+- Demand-ranked pricing produces *clear and interpretable dynamic price variations* aligned with contextual demand signals.
+
+
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Limitations&fontSize=28&fontAlign=11&fontColor=EEF5FF&reversal=true&theme=holi)
+
+- Rental demand is inferred from availability rather than transaction logs.
+
+- The analysis focuses on top data-rich cities and a restricted time window.
+
+- Real-time deployment was simulated due to API rate and resource constraints.
+
+
+
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Conclusion&fontSize=28&fontAlign=11&fontColor=EEF5FF&reversal=true&theme=holi)
+
+This project demonstrates that incorporating external contextual signals, particularly weather and holidays, 
+
+adds meaningful value to short-term rental pricing models.
+
+The shift from full optimization to probability-based demand ranking highlights the importance of balancing model 
+
+complexity with interpretability and practical deployment considerations.
+
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Acknowledgment&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
 
-Developed for the Language, Computation and Cognition course supervised by Yevgeni Berzak, Technion. <br>
+Developed for the Data Collection Lab - 00940290 by Noam Cohen, Technion. <br>
 All Rights Reserved.
