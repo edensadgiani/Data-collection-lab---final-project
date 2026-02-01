@@ -12,13 +12,38 @@
 > Eden Sadgiani eden.sa@technion.ac.il
 > 
 
-![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Project%20Overview&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=How%20To%20Run%20the%20Notebook&fontSize=28&fontAlign=21&fontColor=EEF5FF&reversal=true&theme=holi)
 
-This project develops a Smart Pricing System for Airbnb hosts. By integrating internal listing data with external
 
-signals like weather and holidays, it moves beyond host intuition. Using XGBoost and Logistic Regression, it 
+This project was developed and executed using **Databricks** with **PySpark**.
 
-optimizes revenue through demand-ranked dynamic adjustments.
+### Prerequisites
+- Access to a Databricks workspace
+- A running Spark cluster (Databricks Runtime with Spark ML support)
+- Python 3.x (handled automatically by Databricks)
+
+### Steps
+1. Download the notebook file:
+   - `final_project.ipynb`
+
+2. Upload the notebook to Databricks:
+   - Open Databricks → Workspace
+   - Click **Import**
+   - Upload the `final_project.ipynb` file
+
+3. Attach the notebook to a running cluster.
+
+4. Run the notebook:
+   - Execute the notebook **top-to-bottom** using *Run All*
+   - The pipeline will:
+     - Load and preprocess Airbnb and external data
+     - Perform feature engineering
+     - Train the XGBoost and Logistic Regression models
+     - Generate rental probability estimates and dynamic pricing outputs
+
+### Notes
+- External data (weather, holidays, POIs) is retrieved via public APIs and/or preprocessed Parquet files as described in the notebook.
+- Due to API rate limits, the project uses historical data to simulate real-time pricing behavior.
 
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Datasets&fontSize=28&fontAlign=7&fontColor=EEF5FF&reversal=true&theme=holi)
@@ -39,6 +64,15 @@ Geographic features (landmarks, transport hubs, attractions) extracted from Open
 
 
 All datasets were processed using PySpark and stored in Parquet format.
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Project%20Overview&fontSize=28&fontAlign=14&fontColor=EEF5FF&reversal=true&theme=holi)
+
+This project develops a Smart Pricing System for Airbnb hosts. By integrating internal listing data with external
+
+signals like weather and holidays, it moves beyond host intuition. Using XGBoost and Logistic Regression, it 
+
+optimizes revenue through demand-ranked dynamic adjustments.
+
+
 
 ![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Methodology&fontSize=28&fontAlign=11&fontColor=EEF5FF&reversal=true&theme=holi)
 
