@@ -40,7 +40,7 @@ Geographic features (landmarks, transport hubs, attractions) extracted from Open
 
 All datasets were processed using PySpark and stored in Parquet format.
 
-![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Methodology&fontSize=28&fontAlign=7&fontColor=EEF5FF&reversal=true&theme=holi)
+![header](https://capsule-render.vercel.app/api?type=soft&color=293B5F&height=45&section=header&text=Methodology&fontSize=28&fontAlign=11&fontColor=EEF5FF&reversal=true&theme=holi)
 
 The pricing framework follows a **predict-then-adjust** approach:
 
